@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811af908-6897-448d-8bb5-4793737638cb" name="变更" comment="变更">
-      <change afterPath="$PROJECT_DIR$/src/socket/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/socket/Server.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/thread/ThreadDemo1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/thread/ThreadDemo2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/eclipse/com/study/collections/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/test/eclipse/com/study/threadlocal/ThreadLocalTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,34 +41,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "F:/cgb2202-se_-teacher",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/cgb2202-se_-teacher&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\eclipse\bin\com\study\test" />
       <recent name="F:\eclipse\bin\com\study" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.study.test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.study.io" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket.Client" />
       <module name="eclipse" />
       <selectedOptions>
@@ -100,6 +106,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Client" />
         <item itemvalue="Application.Server" />
       </list>
     </recent_temporary>
@@ -135,7 +142,8 @@
       <workItem from="1662567513584" duration="401000" />
       <workItem from="1662567997904" duration="303000" />
       <workItem from="1662568317767" duration="191000" />
-      <workItem from="1662604370405" duration="11871000" />
+      <workItem from="1662604370405" duration="14877000" />
+      <workItem from="1662649624631" duration="2091000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1662568372184</created>
@@ -144,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662568372184</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="变更">
+      <created>1662623972884</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662623972884</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +195,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/socket/Server.java</url>
-          <line>26</line>
+          <line>30</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

@@ -13,6 +13,10 @@ import java.util.Scanner;
 聊天室服务端
  */
 public class Server {
+    public static void main(String[] args) {
+        Server server = new Server();
+        server.start();
+    }
     /*
      java.net.ServerSocket
      ServerSocket是运行在服务端上的。其主要有两个作用
@@ -39,7 +43,6 @@ public class Server {
         }
     }
     public void start(){
-        Scanner s = new Scanner(System.in);
         try {
             /*
                 ServerSocket的accept方法是一个阻塞方法。
@@ -52,14 +55,11 @@ public class Server {
                 System.out.println("等待客户端连接~");
                 Socket socket = serverSocket.accept();
                 System.out.println("一个客户端已连接上！");
-            InputStream is = socket.getInputStream();
-            InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
-            BufferedReader br = new BufferedReader(isr);
-            String line;
-            //Scanner scanner= new Scanner(line);
-            while ((line = br.readLine()) != null){
-                System.out.println("客户端发来消息："+line);
-            }
+            //启动一个线程来处理客户端的交互
+
+            ClientHandler clientHandler = new ClientHandler(socket);
+            Thread thread = new Thread(clientHandler);
+            thread.start();
             }
 
         } catch (IOException e) {
@@ -74,8 +74,28 @@ public class Server {
 
     }
 
-    public static void main(String[] args) {
-        Server server = new Server();
-        server.start();
+    private class  ClientHandler implements Runnable{
+        private Socket socket;
+        public ClientHandler(Socket socket) {
+            this.socket = socket;
+        }
+
+        @Override
+        public void run() {
+            try {
+                InputStream is = socket.getInputStream();
+                InputStreamReader isr = new InputStreamReader(is, StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr);
+                String line;
+                //Scanner scanner= new Scanner(line);
+                while ((line = br.readLine()) != null){
+                    System.out.println("客户端发来消息："+line);
+                }
+            } catch (IOException e) {
+               // e.printStackTrace();
+            } finally {
+
+            }
+        }
     }
 }
