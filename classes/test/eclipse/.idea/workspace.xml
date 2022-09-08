@@ -64,13 +64,10 @@
       <recent name="com.study.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Client">
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Server">
+    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="socket.Client" />
       <module name="eclipse" />
-      <selectedOptions>
-        <option name="environmentVariables" visible="false" />
-      </selectedOptions>
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="socket.*" />
@@ -94,13 +91,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Client" />
-      <item itemvalue="Application.Server" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +129,7 @@
       <workItem from="1662567513584" duration="401000" />
       <workItem from="1662567997904" duration="303000" />
       <workItem from="1662568317767" duration="191000" />
-      <workItem from="1662604370405" duration="11871000" />
+      <workItem from="1662604370405" duration="2916000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1662568372184</created>
@@ -177,11 +171,6 @@
           <url>file://$PROJECT_DIR$/src/com/study/io/NoteDemo.java</url>
           <line>17</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/socket/Server.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
