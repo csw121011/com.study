@@ -61,10 +61,6 @@ public class Server {
             ClientHandler clientHandler = new ClientHandler(socket);
             Thread thread = new Thread(clientHandler);
             thread.start();
-            if (!thread.isAlive()){
-                System.out.println("所有客户端已关闭");
-                return;
-            }
             }
 
         } catch (IOException e) {
@@ -101,7 +97,7 @@ public class Server {
             } catch (IOException e) {
                // e.printStackTrace();
             } finally {
-                return;
+
 
             }
         }
