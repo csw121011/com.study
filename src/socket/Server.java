@@ -37,12 +37,12 @@ public class Server {
              */
             System.out.println("正在启动服务端~~~");
             serverSocket = new ServerSocket(8088);
-            System.out.println("服务端启动完毕！！");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
     public void start(){
+        int i = 1;
         try {
             /*
                 ServerSocket的accept方法是一个阻塞方法。
@@ -52,14 +52,19 @@ public class Server {
                 阻塞方法:调用后，程序就"卡住"不往下执行了。
              */
             while (true) {
-                System.out.println("等待客户端连接~");
+                System.out.println("服务端已启动，等待客户端连接~");
                 Socket socket = serverSocket.accept();
-                System.out.println("一个客户端已连接上！");
+                System.out.println("已连接"+"，共有"+i+"客户端连接");
+                i++;
             //启动一个线程来处理客户端的交互
 
             ClientHandler clientHandler = new ClientHandler(socket);
             Thread thread = new Thread(clientHandler);
             thread.start();
+            if (!thread.isAlive()){
+                System.out.println("所有客户端已关闭");
+                return;
+            }
             }
 
         } catch (IOException e) {
@@ -76,8 +81,10 @@ public class Server {
 
     private class  ClientHandler implements Runnable{
         private Socket socket;
+        private String host;
         public ClientHandler(Socket socket) {
             this.socket = socket;
+            host = socket.getInetAddress().getHostAddress();
         }
 
         @Override
@@ -89,11 +96,12 @@ public class Server {
                 String line;
                 //Scanner scanner= new Scanner(line);
                 while ((line = br.readLine()) != null){
-                    System.out.println("客户端发来消息："+line);
+                    System.out.println(host+"发来消息："+line);
                 }
             } catch (IOException e) {
                // e.printStackTrace();
             } finally {
+                return;
 
             }
         }
