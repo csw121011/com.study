@@ -1,6 +1,6 @@
 package com.study.genericity;
 /**
- * 泛型：约束着数据的传入类型，只能存储指定的类型
+ * 泛型：约束着数据的传入类型，只能存储指定的类型，且<>里面只能填写引用数据类型，比如Integer，Double。
  * 常见的泛型：
  * 		E(Element)
  *		T(Type)

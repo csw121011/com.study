@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="811af908-6897-448d-8bb5-4793737638cb" name="变更" comment="变更">
-      <change afterPath="$PROJECT_DIR$/src/com/study/thread/DaemonThreadDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/study/thread/SyncDemo2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/study/thread/ThreadSleepDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/study/thread/ThreadSleepDemo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/collection/CollectionDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/collection/CollectionDemo02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/collection/CollectionDemo03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/collection/CollectionDemo04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/collection/Piont.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/study/genericity/IteratorDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/socket/Client01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/production/eclipse/socket/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/eclipse/socket/Client.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/production/eclipse/socket/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/classes/production/eclipse/socket/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/test/eclipse/com/study/genericity/GenericityTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/study/genericity/GenericityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/study/genericity/GenericityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/socket/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/socket/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/socket/Server.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,23 +50,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/cgb2202-se_-teacher&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.gitee.ui.GiteeSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/cgb2202-se_-teacher",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\eclipse\bin\com\study\test" />
@@ -69,20 +76,18 @@
       <recent name="com.study.test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.study.collection" />
       <recent name="com.study.thread" />
       <recent name="com.study.io" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ThreadSleepDemo2 (1)">
-    <configuration name="Client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="socket.Client" />
+  <component name="RunManager" selected="Application.IteratorDemo">
+    <configuration name="CollectionDemo02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.collection.CollectionDemo02" />
       <module name="eclipse" />
-      <selectedOptions>
-        <option name="environmentVariables" visible="false" />
-      </selectedOptions>
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="socket.*" />
+          <option name="PATTERN" value="com.study.collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadPriorityDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.thread.ThreadPriorityDemo" />
+    <configuration name="CollectionDemo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.collection.CollectionDemo03" />
       <module name="eclipse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.thread.*" />
+          <option name="PATTERN" value="com.study.collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSleepDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.thread.ThreadSleepDemo" />
+    <configuration name="CollectionDemo04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.collection.CollectionDemo04" />
       <module name="eclipse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.thread.*" />
+          <option name="PATTERN" value="com.study.collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,12 +121,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSleepDemo2 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.thread.ThreadSleepDemo2" />
+    <configuration name="GenericityTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.genericity.GenericityTest" />
       <module name="eclipse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.thread.*" />
+          <option name="PATTERN" value="com.study.genericity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,12 +134,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ThreadSleepDemo2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.study.thread.ThreadSleepDemo2" />
+    <configuration name="IteratorDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.study.genericity.IteratorDemo" />
       <module name="eclipse" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.study.thread.*" />
+          <option name="PATTERN" value="com.study.genericity.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,19 +148,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ThreadPriorityDemo" />
-      <item itemvalue="Application.ThreadSleepDemo" />
-      <item itemvalue="Application.ThreadSleepDemo2" />
-      <item itemvalue="Application.ThreadSleepDemo2 (1)" />
-      <item itemvalue="Application.Client" />
+      <item itemvalue="Application.CollectionDemo02" />
+      <item itemvalue="Application.CollectionDemo03" />
+      <item itemvalue="Application.CollectionDemo04" />
+      <item itemvalue="Application.GenericityTest" />
+      <item itemvalue="Application.IteratorDemo" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ThreadSleepDemo2 (1)" />
-        <item itemvalue="Application.ThreadSleepDemo2" />
-        <item itemvalue="Application.ThreadSleepDemo" />
-        <item itemvalue="Application.ThreadPriorityDemo" />
-        <item itemvalue="Application.Client" />
+        <item itemvalue="Application.IteratorDemo" />
+        <item itemvalue="Application.GenericityTest" />
+        <item itemvalue="Application.CollectionDemo04" />
+        <item itemvalue="Application.CollectionDemo03" />
+        <item itemvalue="Application.CollectionDemo02" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +198,8 @@
       <workItem from="1662604370405" duration="14877000" />
       <workItem from="1662649624631" duration="2167000" />
       <workItem from="1662685277304" duration="9999000" />
-      <workItem from="1662705769284" duration="877000" />
+      <workItem from="1662705769284" duration="2169000" />
+      <workItem from="1662787775229" duration="48715000" />
     </task>
     <task id="LOCAL-00001" summary="变更">
       <created>1662568372184</created>
@@ -223,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662689349345</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="变更">
+      <created>1662707497970</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1662707497970</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +294,16 @@
           <url>file://$PROJECT_DIR$/src/com/study/thread/SyncDemo2.java</url>
           <line>21</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/socket/Server.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/socket/Client.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

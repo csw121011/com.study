@@ -9,6 +9,10 @@ import java.util.Scanner;
  * 聊天室客户端
  */
 public class Client {
+    public static void main(String[] args) {
+        Client client = new Client();
+        client.start();
+    }
     /**
      * java.net.Socket
      * Socket封装了TCP协议的通讯细节，使用它可以和服务端建立TCP连接，并基于两个流的
@@ -38,10 +42,17 @@ public class Client {
     public void start() {
         Scanner s = new Scanner(System.in);
         try {
+            //启动一个用于读取服务端发送过来消息的线程
+            ServerHandler serverHandler = new ServerHandler();
+            Thread t = new Thread(serverHandler);
+            t.start();
+            //通过socket获取输出流，给服务端发送消息
             OutputStream os = socket.getOutputStream();
             OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_8);
             BufferedWriter bw = new BufferedWriter(osw);
             PrintWriter pw = new PrintWriter(bw, true);
+            //通过socket获取输入流，获取服务端发来的消息
+
             while (true) {
                 String line = s.nextLine();
                 if ("exit".equals(line)){
@@ -58,11 +69,24 @@ public class Client {
                 e.printStackTrace();
             }
         }
-
     }
 
-    public static void main(String[] args) {
-        Client client = new Client();
-        client.start();
+    private class ServerHandler implements Runnable{
+        @Override
+        public void run() {
+            try{
+                InputStream is = socket.getInputStream();
+                InputStreamReader isr = new InputStreamReader(is,StandardCharsets.UTF_8);
+                BufferedReader br = new BufferedReader(isr);
+
+                String line;
+                while ((line = br.readLine()) != null){
+                    System.out.println(line);
+                }
+
+            }catch (IOException e){
+
+            }
+        }
     }
 }
